@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1 className="text-xl text-center">Welcome to nextPage!</h1>
       <Outlet />
       <Footer />
     </div>
