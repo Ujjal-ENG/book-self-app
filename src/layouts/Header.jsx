@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsOpen] = useState(false);
   return (
-    <div className="p-3 flex items-center justify-between">
+    <div className="lg:mx-20 mx-0 p-3 flex items-center justify-between">
       {/* logo item */}
       <Link
         className="flex items-center justify-center gap-2 lg:text-3xl text-xl tracking-wide font-bold"
@@ -55,7 +55,7 @@ const Header = () => {
                   <Link to="/" className="inline-flex items-center">
                     <AiFillThunderbolt className="text-2xl text-blue-500" />
                     <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                      nextPage
+                      ProgrammingBooks
                     </span>
                   </Link>
                 </div>
