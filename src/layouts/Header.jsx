@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsOpen] = useState(false);
   return (
-    <div className="lg:mx-20 mx-0 p-3 flex items-center justify-between">
+    <div className="lg:px-20 px-0 p-3 flex items-center justify-between shadow-lg">
       {/* logo item */}
       <Link
         className="flex items-center justify-center gap-2 lg:text-3xl text-xl tracking-wide font-bold"
