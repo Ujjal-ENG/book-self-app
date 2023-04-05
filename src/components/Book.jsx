@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Book = ({ data }) => {
   return (
-    <div className="overflow-hidden relative duration-300 transition-all transform hover:translate-y-2">
+    <div className="overflow-hidden relative duration-300 transition-all transform hover:translate-y-2 shadow-2xl rounded-lg">
       <img
         src={data.image}
         alt={data.title}
