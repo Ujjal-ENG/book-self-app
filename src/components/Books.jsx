@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData, useNavigation } from "react-router-dom";
 import Book from "./Book";
 import LoadingSpinner from "./LoadingSpinner";
+import Pagination from "./Pagination";
 
 const Books = () => {
   const { books } = useLoaderData();
@@ -24,6 +25,11 @@ const Books = () => {
           <Book key={idx} data={book} />
         ))}
       </div>
+      <Pagination
+        totalPosts={books.length}
+        postsPerPage={postsPerPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };
